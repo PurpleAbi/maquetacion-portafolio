@@ -7,12 +7,19 @@ body{
     font-style: normal;
     display: flex;
     justify-content: center;
+    position: absolute;
 }
 
 .container{
     max-width: 800px;
     width: 100%;
-    margin: 50px 10px;
+    margin: 50px 0px 50px 10px;
+    position: relative;
+}
+
+.container-nav{
+    position: relative;
+    margin-left: 100%;
 }
 
 .section{
@@ -275,4 +282,29 @@ input:focus{
 
 .active:after{
     content: '\22C0';
+}
+
+@media screen and (max-width:1600px) {
+
+    .container-nav{
+        margin-left: 80%;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .container-nav{
+        margin-left: 50%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container-nav{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container-nav{
+        margin-left: 0;
+    }
 }
