@@ -1,27 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(188, 198, 209);
+    background-color: rgb(190, 184, 205);
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     display: flex;
     justify-content: center;
     position: absolute;
+    gap: 1rem;
+    width: 100vw;
 }
 
 .container{
-    max-width: 800px;
-    width: 100%;
-    margin: 50px 0px 50px 10px;
+    width: 70vw;
+    margin: 1rem 0;
     position: relative;
 }
 
 .container-nav{
     position: relative;
-    margin-left: 100%;
+    
 }
 
+.sticky-nav{
+    height: 200px;
+    width: 50px;
+    background-color: black;
+    position: sticky;
+    border-radius: 30px;
+    top: 7%;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .section{
     background-color:rgb(255, 255, 255);
     padding: 50px 50px 70px;
@@ -41,20 +58,21 @@ body{
 
 .section-titulo{
     background-color:rgb(255, 255, 255);
-    padding: 5px 30px;
+    padding: 1rem 2rem;
     border-radius: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     display: flex;
+    justify-content: space-between;
 }
 
 .icono-contacto{
     display: flex;
     align-items: center;
-    margin-left: 80%;
+   
 }
 
 .section-aparte{
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
 h1{
@@ -66,7 +84,9 @@ a{
     color: black;
     font-weight: bold;
 }
-
+.a-btn{
+    text-decoration: none;
+}
 .subsection{
     width: 50%; 
 }
@@ -128,7 +148,7 @@ img{
 }
 
 .profile{
-    height: 200px;
+    
     padding-left:20px;
 }
 
@@ -165,23 +185,17 @@ img{
     color: white;
     cursor: pointer;
 }
-
-.sticky-nav{
-    height: 200px;
-    width: 50px;
-    background-color: black;
-    position: sticky;
-    border-radius: 30px;
-    top: 7%;
-    left: 20%;
+.nav-item{
+    width: 3rem;
+    height: 3rem;
     display: flex;
+    margin-top: 1rem;
     justify-content: center;
+    
 }
-
 li{
     color:rgb(146, 145, 145);  
-    padding-right: 40px;  
-    padding-top: 6px;
+    
 }
 
 li:hover{
@@ -191,6 +205,7 @@ li:hover{
 ul{
     text-decoration: none;
     list-style: none;
+
 }
 
 .input-contacto{
@@ -258,6 +273,9 @@ input:focus{
     font-family: "Nunito Sans", sans-serif;
     transition: 0.6s;
 }
+.top{
+    border-top: 0;
+}
 
 .accordion-button:hover{
     cursor: pointer;
@@ -284,27 +302,95 @@ input:focus{
     content: '\22C0';
 }
 
-@media screen and (max-width:1600px) {
+/* @media screen and (max-width:1600px) {
 
-    .container-nav{
-        margin-left: 80%;
+    
+} */
+
+@media screen and (max-width:1200px) {
+    .container{
+        width: 80vw;
     }
-}
-
-@media screen and (max-width:1280px) {
-    .container-nav{
-        margin-left: 50%;
+    .accordion-button{
+        width: 80vw;
     }
-}
-
-@media screen and (max-width:1000px) {
-    .container-nav{
-        margin-left: 20%;
+    .section-aparte{
+        margin-top: 2.4rem;
     }
 }
 
 @media screen and (max-width:800px) {
-    .container-nav{
-        margin-left: 0;
+    body{
+        /* max-width: 300px; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    .container-nav{
+        width: 100%;  
+        height: 3rem;
+    }
+    .sticky-nav{
+        width: 200px;
+        height:50px;
+        position: fixed;
+        z-index: 1;
+        top: 1rem;
+        left: 37.2%;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+    li{
+       
+    }
+    .container{
+        width: 90vw;
+    }
+    .section{
+        padding: 1rem;
+        
+    }
+    .profile{
+
+    }
+    .accordion-button{
+        width: 90vw;
+    }
+    .proyectos{padding: 0;}
+    
+}
+
+@media screen and (max-width:500px) {
+
+    .sticky-nav{
+        left: 25vw;
+    }
+    .home{
+        text-align: center;
+    }
+    .status{
+        margin-left: 1rem;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .intro{
+        flex-direction: column; 
+        gap: 2rem;  
+    }
+    .subsection{
+        width: 100%;
+    }
+    .section-titulo{
+        justify-content: space-between;
+    }
+    .icono-contacto{
+        margin: 0;
+    }
+    .section-aparte{
+        margin-top: 1.4rem;
+    }
+    .proyectos{padding: 0;}
 }
