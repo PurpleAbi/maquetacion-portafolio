@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(190, 184, 205);
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
@@ -16,18 +18,17 @@ body{
     width: 100vw;
 }
 
-.container{
+.container {
     width: 70vw;
     margin: 1rem 0;
     position: relative;
 }
 
-.container-nav{
+.container-nav {
     position: relative;
-    
 }
 
-.sticky-nav{
+.sticky-nav {
     height: 200px;
     width: 50px;
     background-color: black;
@@ -39,16 +40,17 @@ body{
     justify-content: center;
     align-items: center;
 }
-.section{
-    background-color:rgb(255, 255, 255);
+
+.section {
+    background-color: rgb(255, 255, 255);
     padding: 50px 50px 70px;
     border-radius: 10px;
     margin-bottom: 1px;
     display: flex;
 }
 
-.section-formulario{
-    background-color:rgb(255, 255, 255);
+.section-formulario {
+    background-color: rgb(255, 255, 255);
     padding: 40px;
     border-radius: 10px;
     margin-bottom: 1px;
@@ -56,8 +58,8 @@ body{
     flex-direction: column;
 }
 
-.section-titulo{
-    background-color:rgb(255, 255, 255);
+.section-titulo {
+    background-color: rgb(255, 255, 255);
     padding: 1rem 2rem;
     border-radius: 10px;
     margin-bottom: 2px;
@@ -65,70 +67,71 @@ body{
     justify-content: space-between;
 }
 
-.icono-contacto{
+.icono-contacto {
     display: flex;
     align-items: center;
-   
 }
 
-.section-aparte{
+.section-aparte {
     margin-top: 3rem;
 }
 
-h1{
+h1 {
     font-size: 29px;
     margin: 0px 0px 10px;
 }
 
-a{
+a {
     color: black;
     font-weight: bold;
 }
-.a-btn{
+
+.a-btn {
     text-decoration: none;
 }
-.subsection{
-    width: 50%; 
+
+.subsection {
+    width: 50%;
 }
 
-.subsection-chica{
+.subsection-chica {
     width: 100%;
     display: flex;
     flex-direction: row;
- 
 }
 
-.subsection-grande{
+.subsection-grande {
     width: 100%;
     display: flex;
     position: relative;
-
 }
-textarea{
+
+textarea {
     resize: none;
 }
-.curso{
+
+.curso {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.box{
+.box {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-img{
+img {
     height: 200px;
 }
 
-.job{
+.job {
     text-decoration: underline;
     margin: 0;
 }
 
-.dot{
+.dot {
     height: 10px;
     width: 10px;
     background-color: rgb(1, 153, 120);
@@ -136,82 +139,78 @@ img{
     margin-top: 5px;
 }
 
-.status{
+.status {
     display: flex;
     border: 1px solid rgb(204, 207, 211);
     border-radius: 20px;
     padding: 6px;
     margin: 30px 0px 10px;
     width: 90%;
-
 }
 
-.p-status{
+.p-status {
     margin: 0 12px;
 }
 
-.profile{
-    
-    padding-left:20px;
+.profile {
+    padding-left: 20px;
 }
 
-.p-descr{
+.p-descr {
     font-size: 28px;
     border-bottom: 1px solid rgb(211, 211, 211);
     padding-bottom: 20px;
     margin: 0px 0px 20px;
-    
 }
 
-.btn-black{
+.btn-black {
     background-color: black;
     color: white;
     padding: 20px;
     border-radius: 30px;
 }
 
-.btn-black:hover{
+.btn-black:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-.btn-light{
+.btn-light {
     background-color: white;
     padding: 20px;
     text-decoration: underline;
     border-radius: 30px;
 }
 
-.btn-light:hover{
+.btn-light:hover {
     background-color: black;
     color: white;
     cursor: pointer;
 }
-.nav-item{
+
+.nav-item {
     width: 3rem;
     height: 3rem;
     display: flex;
     margin-top: 1rem;
     justify-content: center;
-    
-}
-li{
-    color:rgb(146, 145, 145);  
-    
 }
 
-li:hover{
+li {
+    color: rgb(146, 145, 145);
+}
+
+li:hover {
     color: white;
 }
 
-ul{
+ul {
     text-decoration: none;
     list-style: none;
-
 }
 
-.input-contacto{
+.input-contacto {
     width: 100%;
     height: 40px;
     border-color: rgb(183, 185, 187);
@@ -224,7 +223,7 @@ ul{
     margin: 2px 1px;
 }
 
-.mensaje{
+.mensaje {
     width: 100%;
     border-color: rgb(183, 185, 187);
     border-style: double;
@@ -235,34 +234,35 @@ ul{
     font-style: normal;
 }
 
-textarea:focus{
+textarea:focus {
     border-color: rgb(0, 123, 255);
     box-shadow: 20px rgb(0, 123, 255);
     outline: 0 none;
 
 }
 
-input:focus{
+input:focus {
     border-color: rgb(0, 123, 255);
     box-shadow: 10px rgb(0, 123, 255);
     outline: 0 none;
 }
 
-#button{
+#button {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
-.proyectos{   
+.proyectos {
     padding: 0%;
 }
 
-.accordion-item{
+.accordion-item {
     border-radius: 10px;
 }
-.accordion-button{
-    background-color:rgb(255, 255, 255);
+
+.accordion-button {
+    background-color: rgb(255, 255, 255);
     height: 6rem;
     width: 70vw;
     text-align: left;
@@ -276,125 +276,147 @@ input:focus{
     font-weight: 700;
     transition: 0.2s;
 }
-.top{
+
+.top {
     border-top: 0;
 }
 
-.accordion-button:hover{
+.accordion-button:hover {
     cursor: pointer;
 }
 
-.accordion-body{
-    padding: 0 2rem 2rem 2rem ;
+.accordion-body {
+    padding: 0 2rem 2rem 2rem;
     display: none;
-    overflow: hidden; 
+    overflow: hidden;
     max-height: 0;
     transition: max-height 0.1s ease-in-out;
-    
+}
 
-} 
-
-.accordion-button:after{
-    content:'\22C1';
+.accordion-button:after {
+    content: '\22C1';
     font-size: 20px;
     font-weight: bold;
     color: black;
     float: right;
     margin-right: 15px;
 }
-.links-accordion{
+
+.links-accordion {
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
+    text-align: center;
 }
-.links-accordion a{
+
+.links-accordion a {
     padding: .4rem;
 }
-.active:after{
+
+.active:after {
     content: '\22C0';
 }
 
 
 @media screen and (max-width:1200px) {
-    .container{
+    .container {
         width: 80vw;
     }
-    .accordion-button{
+
+    .accordion-button {
         width: 80vw;
     }
-    .section-aparte{
+
+    .section-aparte {
         margin-top: 2.4rem;
     }
 }
 
 @media screen and (max-width:800px) {
-    body{
+    body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .container-nav{
-        width: 100%;  
+
+    .container-nav {
+        width: 100%;
         height: 3rem;
     }
-    .sticky-nav{
+
+    .sticky-nav {
         width: 200px;
-        height:50px;
+        height: 50px;
         position: fixed;
         z-index: 1;
         top: 1rem;
         left: 37.2%;
     }
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
     }
-    li{
-       
-    }
-    .container{
+
+    .container {
         width: 90vw;
     }
-    .section{
+
+    .section {
         padding: 1rem;
-        
+
     }
-    .accordion-button{
+
+    .accordion-button {
         width: 90vw;
     }
-    .proyectos{padding: 0;}
-    
+
+    .proyectos {
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width:500px) {
 
-    .sticky-nav{
+    .sticky-nav {
         left: 25vw;
     }
-    .home{
+
+    .home {
         text-align: center;
     }
-    .status{
+
+    .status {
         margin-left: 1rem;
     }
-    .section{
+
+    .section {
         flex-direction: column;
     }
-    .intro{
-        flex-direction: column; 
-        gap: 2rem;  
+
+    .intro {
+        flex-direction: column;
+        gap: 2rem;
     }
-    .subsection{
+
+    .subsection {
         width: 100%;
     }
-    .section-titulo{
+
+    .section-titulo {
         justify-content: space-between;
     }
-    .icono-contacto{
+
+    .icono-contacto {
         margin: 0;
     }
-    .section-aparte{
+
+    .section-aparte {
         margin-top: 1.4rem;
     }
-    .proyectos{padding: 0;}
+
+    .proyectos {
+        padding: 0;
+    }
 }
