@@ -118,12 +118,14 @@ textarea {
 }
 
 .box {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: .6rem 1rem;
+    height: 50%;
+    width: 50%;
 }
 
-img {
-    height: 200px;
+.box>img{
+    height: 100%;
+    width: 100%; 
 }
 
 .job {
@@ -154,6 +156,7 @@ img {
 
 .profile {
     padding-left: 20px;
+    height: 200px;
 }
 
 .p-descr {
@@ -330,6 +333,13 @@ input:focus {
     .section-aparte {
         margin-top: 2.4rem;
     }
+    .subsection{
+        padding: .6rem;
+    }
+    .profile{
+        padding-left: 0;
+        height: 190px;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -352,7 +362,10 @@ input:focus {
         top: 1rem;
         left: 37.2%;
     }
-
+    .status {
+        margin-left: 10rem;
+        width: 50%;
+    }
     ul {
         display: flex;
         align-items: center;
@@ -362,9 +375,17 @@ input:focus {
         width: 90vw;
     }
 
+    .home {
+        text-align: center;
+    }
     .section {
+        flex-direction: column;
         padding: 1rem;
+    }
 
+    .subsection {
+        width: 100%;
+        padding: .4rem;
     }
 
     .accordion-button {
@@ -375,6 +396,18 @@ input:focus {
         padding: 0;
     }
 
+    .curso {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box {
+        padding: .6rem 0;
+        height: 80%;
+        width: 80%;
+    }
+    
 }
 
 @media screen and (max-width:500px) {
@@ -383,26 +416,18 @@ input:focus {
         left: 25vw;
     }
 
-    .home {
-        text-align: center;
-    }
-
-    .status {
+    .status{
+        width: 90%;
         margin-left: 1rem;
     }
-
     .section {
         flex-direction: column;
     }
 
     .intro {
-        flex-direction: column;
         gap: 2rem;
     }
 
-    .subsection {
-        width: 100%;
-    }
 
     .section-titulo {
         justify-content: space-between;
@@ -419,4 +444,10 @@ input:focus {
     .proyectos {
         padding: 0;
     }
+    
+    .box {
+        height: 100%;
+        width: 100%;
+    }
+
 }
